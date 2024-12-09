@@ -1,0 +1,35 @@
+// Font imports
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap");
+
+// Colors
+$clr-cyan: hsl(177, 68%, 64%);
+$clr-orange: hsl(12, 94%, 65%);
+$clr-yellow: hsl(33, 100%, 70%);
+$clr-white: hsl(20, 33%, 98%);
+$clr-slate: hsl(244, 23%, 12%);
+
+// Spacing
+$spacer-2500: 12.5rem;
+$spacer-1600: 8rem;
+$spacer-1000: 5rem;
+$spacer-800: 4rem;
+$spacer-700: 3.5rem;
+$spacer-600: 3rem;
+$spacer-500: 2.5rem;
+$spacer-400: 2rem;
+$spacer-300: 1.5rem;
+$spacer-250: 1.25rem;
+$spacer-200: 1rem;
+$spacer-100: 0.5rem;
+
+// Typography
+$ff-primary: "IBM Plex Sans", sans-serif;
+$fw-regular: 400;
+$fw-bold: 700;
+
+$fs-preset-6: 1rem;
+$fs-preset-5: 1.125rem;
+$fs-preset-4: 1.25rem;
+$fs-preset-3: 2.5rem;
+$fs-preset-2: 4rem;
+$fs-preset-1: clamp(2.5rem, 7vw, 5.5rem);

@@ -1,0 +1,60 @@
+@use "../variables" as *;
+
+header {
+  background: url("/assets/bg-main-mobile.png") left bottom;
+  padding: $spacer-800 0 $spacer-2500;
+}
+.main-nav__logo img {
+  display: block;
+  width: 9rem;
+}
+
+.hero {
+  margin-top: $spacer-800;
+  &__title {
+    font-size: $fs-preset-1;
+  }
+  &__description {
+    margin-top: $spacer-400;
+    font-size: $fs-preset-6;
+  }
+}
+
+@media (min-width: 40rem) {
+  header {
+    background: url("/assets/bg-main-tablet.png") right,
+      url("/assets/bg-pattern-1.svg") no-repeat right top;
+    background-position: right, calc(100% + 3.5rem) -3rem;
+    padding: $spacer-800 0 18rem;
+  }
+
+  .hero {
+    &__title {
+      font-size: $fs-preset-2;
+      max-width: 12ch;
+      line-height: 1;
+    }
+    &__description {
+      font-size: $fs-preset-5;
+      max-width: 45ch;
+    }
+  }
+}
+
+@media (min-width: 60rem) {
+  header {
+    background-position: right, right -2.5rem;
+  }
+  .hero {
+    margin-top: $spacer-1600;
+    &__title {
+      font-size: $fs-preset-1;
+      max-width: 20ch;
+      line-height: 1;
+    }
+    &__description {
+      font-size: $fs-preset-4;
+      max-width: 59ch;
+    }
+  }
+}

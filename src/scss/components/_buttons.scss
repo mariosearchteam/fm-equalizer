@@ -1,0 +1,31 @@
+@use "../variables" as *;
+
+.button {
+  margin: $spacer-100 0;
+  width: 100%;
+  border: none;
+  border-radius: 0.75rem;
+  padding: $spacer-200;
+  font-size: $fs-preset-5;
+  font-weight: $fw-bold;
+  color: $clr-white;
+  background-color: $clr-slate;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    background-color: $clr-cyan;
+    color: $clr-slate;
+    svg path {
+      fill: $clr-slate;
+    }
+  }
+}
+
+.button--android {
+  background-color: $clr-white;
+  color: $clr-slate;
+  &:hover,
+  &:focus {
+    background-color: $clr-yellow;
+  }
+}

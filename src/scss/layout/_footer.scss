@@ -1,0 +1,49 @@
+@use "../variables" as *;
+
+.footer {
+  padding-top: $spacer-800;
+  padding-bottom: $spacer-800;
+  &__logo {
+    margin-bottom: $spacer-400;
+    display: block;
+  }
+  & a {
+    color: $clr-slate;
+    text-decoration: none;
+    font-weight: $fw-bold;
+    &:hover {
+      color: $clr-cyan;
+    }
+  }
+  &__social-icons {
+    display: flex;
+    gap: $spacer-400;
+    margin-top: $spacer-400;
+    & svg:hover,
+    & svg:focus {
+      path {
+        fill: $clr-orange;
+      }
+    }
+  }
+}
+
+@media (min-width: 40rem) {
+  .footer {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 60rem) {
+  .footer.container {
+    padding: $spacer-1600 0;
+  }
+  .footer__left {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: $spacer-1600;
+  }
+}

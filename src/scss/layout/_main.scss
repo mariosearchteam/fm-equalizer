@@ -1,0 +1,95 @@
+@use "../variables" as *;
+
+.feature {
+  &__background {
+    background: url("/assets/bg-pattern-2.svg") $clr-slate;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 27rem;
+  }
+
+  &__image img {
+    margin-top: -34rem;
+    margin-inline: auto;
+    padding-bottom: 2rem;
+    width: 14rem;
+  }
+  &__card {
+    background: $clr-orange;
+    height: fit-content;
+    padding-bottom: $spacer-1600;
+  }
+  &__title {
+    padding-top: $spacer-400;
+    font-size: $fs-preset-3;
+  }
+  &__description {
+    padding-top: $spacer-200;
+    font-size: $fs-preset-6;
+  }
+  &__price {
+    padding-top: $spacer-400;
+    padding-bottom: $spacer-400;
+    display: flex;
+    align-items: center;
+    font-size: $fs-preset-4;
+    & span {
+      font-size: $fs-preset-2;
+      font-weight: $fw-bold;
+      padding-right: $spacer-200;
+    }
+  }
+}
+
+@media (min-width: 40rem) {
+  .feature {
+    &__background {
+      background-position: left top;
+      border-radius: $spacer-200;
+      height: 40rem;
+      margin: 0 $spacer-600;
+    }
+    &__image img {
+      width: 18rem;
+      margin-left: 6rem;
+      margin-top: -48rem;
+    }
+
+    &__card {
+      position: relative;
+      z-index: 1;
+      margin-top: -26rem;
+      margin-left: 20rem;
+      max-width: 22rem;
+      padding-bottom: $spacer-800;
+      border-radius: $spacer-200;
+    }
+  }
+}
+
+@media (min-width: 60rem) {
+  .feature {
+    max-width: 70rem;
+    margin: 0 auto;
+    &__background {
+      background-position: center top;
+      height: 37.5rem;
+      margin: 0;
+    }
+    &__image img {
+      margin-left: 8rem;
+      width: 20rem;
+    }
+    &__card {
+      margin-left: 36rem;
+      margin-top: -27rem;
+      max-width: 32rem;
+      padding-top: 0;
+      padding: $spacer-200 $spacer-800 $spacer-600;
+    }
+    &__description {
+      font-size: $fs-preset-4;
+      max-width: 32ch;
+    }
+  }
+}
