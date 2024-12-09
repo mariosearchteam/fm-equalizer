@@ -87,7 +87,7 @@ body {
 }
 
 header {
-  background: url("/assets/bg-main-mobile.png") left bottom;
+  background: url("../assets/bg-main-mobile.png") left bottom;
   padding: 4rem 0 12.5rem;
 }
 
@@ -109,7 +109,7 @@ header {
 
 @media (min-width: 40rem) {
   header {
-    background: url("/assets/bg-main-tablet.png") right, url("/assets/bg-pattern-1.svg") no-repeat right top;
+    background: url("../assets/bg-main-tablet.png") right, url("../assets/bg-pattern-1.svg") no-repeat right top;
     background-position: right, calc(100% + 3.5rem) -3rem;
     padding: 4rem 0 18rem;
   }
@@ -184,7 +184,7 @@ header {
   }
 }
 .feature__background {
-  background: url("/assets/bg-pattern-2.svg") hsl(244, 23%, 12%);
+  background: url("../assets/bg-pattern-2.svg") hsl(244, 23%, 12%);
   background-position: center top;
   background-repeat: no-repeat;
   height: 27rem;
